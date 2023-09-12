@@ -1,0 +1,33 @@
+{
+  "name": "black-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@zeit/next-sass": "^1.0.1",
+    "bootstrap": "^5.3.1",
+    "cssnano": "^6.0.1",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "next-redux-wrapper": "^8.1.0",
+    "node-sass": "^9.0.0",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.1.2",
+    "react-to-print": "^2.14.13",
+    "reactstrap": "^9.2.0",
+    "redux": "^4.2.1",
+    "typescript": "5.2.2"
+  }
+}

@@ -1,0 +1,17 @@
+#contentToPrint {
+    
+    display: flex !important;
+    flex-wrap: wrap !important;
+    text-align: center;
+    padding: 10px !important;
+    margin: 10px !important;
+  }
+
+  .a4-div {
+    
+    display: flex !important;
+    flex-wrap: wrap !important;
+    
+    padding: 10px !important;
+    margin: 10px !important;
+  }
