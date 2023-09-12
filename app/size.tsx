@@ -1,6 +1,6 @@
 import { Container } from "react-dom"
 import React, { useState } from 'react'
-import './Globals.css'
+import './globals.css'
 export let sizeHeight='33,5mm'
 export let sizeWidth='65mm'
 interface ChildComponentProps {
