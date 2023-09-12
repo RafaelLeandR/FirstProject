@@ -1,7 +1,7 @@
 
 import React, { ChangeEvent, useState } from 'react'
 import {Table, Input, Button} from "reactstrap"
-import './Globals.css'
+import './globals.css'
 import ButtonCopy from './buttonCopy';
 import { convertToObject } from 'typescript';
 let property = ""
