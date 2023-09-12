@@ -1,6 +1,6 @@
 import React, { ChangeEvent, Component, useState } from 'react'
 import {Table, Input, Button} from "reactstrap"
-import './Globals.css'
+import './globals.css'
 import Tabela from './tableForm';
 let copydata = {}
 let arraysTable:any = []
