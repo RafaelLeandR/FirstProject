@@ -13,7 +13,7 @@ export default function LabelCreated({ inputValue, onInputChange,sizeDataOn }: C
   const componentRef = React.useRef();
 
     return(
-        <div className='a4-div d-flex flex-wrap' id="contentToPrint" >
+        <div className='a4-div d-flex flex-wrap' id="contentToPrint" style={{margin:'0', padding:"0", boxSizing:"content-box"}} >
     
       
     
@@ -22,7 +22,7 @@ export default function LabelCreated({ inputValue, onInputChange,sizeDataOn }: C
 
  
     { inputValue.map((item) => (
-      <div className='border insidediv'   key={item.id} style={{ pageBreakInside: 'avoid', margin:'0px', padding:"0px", height:sizeDataOn.height ,width:sizeDataOn.width,boxSizing: 'border-box' }}>
+      <div className='border insidediv'   key={item.id} style={{pageBreakInside: 'avoid',overflowWrap:"break-word",   margin:'0', padding:"0", height:sizeDataOn.height ,width:sizeDataOn.width, }}>
         
         <p style={{ margin:'0px', padding:"0px"}}>{item.barcode}</p>
         <p style={{ margin:'0px', padding:"0px", fontFamily:"Impact"}}>{item.name}</p>

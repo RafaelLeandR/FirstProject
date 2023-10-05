@@ -1,10 +1,10 @@
 .a4-div {
-  width: 210mm;
+  width: auto;
   /*max-width: 100%;
   max-height: 100%;*/
   height: auto;
-  margin: 0 ; 
-  padding: 5mm;
+   
+  
   text-align: center;
  page-break-inside: avoid;
 
@@ -23,8 +23,7 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  
 }
 
 
@@ -35,5 +34,19 @@ body {
     
     
   }*/
-
-  
+  @media print {
+    /* Reset margin for the first page */
+    body {
+        /* Set your desired margin size */
+    }
+    @page {
+      margin-inline-start:5mm ;
+     margin-block: 5mm;
+     
+    }
+    .print-content {
+    /*  transform: scale(1.0); /* Adjust the scale value as needed */
+    
+    }
+     
+  }

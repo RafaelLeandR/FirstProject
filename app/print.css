@@ -3,15 +3,19 @@
     display: flex !important;
     flex-wrap: wrap !important;
     text-align: center;
-    padding: 10px !important;
-    margin: 10px !important;
+    padding: 10mm !important;
+    margin: 10mm !important;
   }
 
   .a4-div {
-    
+    page-break-inside: avoid;
     display: flex !important;
     flex-wrap: wrap !important;
     
     padding: 10px !important;
     margin: 10px !important;
+  }
+
+  .insidediv {
+    page-break-inside: auto;
   }

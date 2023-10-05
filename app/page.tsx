@@ -9,7 +9,7 @@ import LabelCreated from './LabelCreated'
 import {sizeHeight, sizeWidth} from "./size"
 import { ChangeEvent, useState,useEffect } from 'react'
 import './globals.css'
-let sizeDataOn = {width:"65mm",height:"33,5mm"}
+let sizeDataOn = {width:"65mm",height:"33.5mm"}
 import ReactToPrint from 'react-to-print'
 
 
@@ -161,6 +161,10 @@ export default function Home() {
         <Col>
       <div className="" >
     <h1>Gerador de Etiquetas</h1>
+    <ReactToPrint
+    trigger={() => <Button>Preparar para Imprimir</Button>}
+    content={() => document.getElementById('contentToPrint') as HTMLElement}
+  />
    <SizeForm inputValueSize={sizeDataOn}  onWidthChange={handleWidthChange} onHeightChange={handleHeightChange} ></SizeForm>
    <p>(copie da tabela excel, word, google planilhas...)</p>
    <Button onClick={handlePaste}>Colar</Button>
@@ -177,17 +181,18 @@ export default function Home() {
     
 
 <Col>
-    <Container className='text-center'>
+    <div className='text-center'>
   <h3>Impressão</h3>
   <ReactToPrint
     trigger={() => <Button>Preparar para Imprimir</Button>}
     content={() => document.getElementById('contentToPrint') as HTMLElement}
   />
-  <div id="contentToPrint">
+  <p>  </p>
+  <div id="contentToPrint" style={{boxSizing:"content-box", margin:"0", padding:"0"}}>
     <LabelCreated inputValue={tableData1} onInputChange={handleInputChange} sizeDataOn={sizeDataOn} />
   </div>
   
-</Container>
+</div>
 </Col>
 </Row>
 
