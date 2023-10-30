@@ -24,9 +24,9 @@ export default function LabelCreated({ inputValue, onInputChange,sizeDataOn }: C
     { inputValue.map((item) => (
       <div className='border insidediv'   key={item.id} style={{pageBreakInside: 'avoid',overflowWrap:"break-word",   margin:'0', padding:"0", height:sizeDataOn.height ,width:sizeDataOn.width, }}>
         
-        <p style={{ margin:'0px', padding:"0px"}}>{item.barcode}</p>
-        <p style={{ margin:'0px', padding:"0px", fontFamily:"Impact"}}>{item.name}</p>
-        <p style={{ margin:'0px', padding:"0px",fontFamily:"Impact",fontSize:"17pt"}}>R$: {item.price}</p>
+        <p style={{ margin:'0px', padding:"0px",fontSize:"14pt"}}>{item.barcode}</p>
+        <p style={{ margin:'0px', padding:"0px", fontFamily:"Impact",fontSize:"14pt",lineHeight: "1"}}>{item.name}</p>
+        <p style={{ margin:'0px', padding:"0px",fontFamily:"Impact",fontSize:"23pt"}}>R$: {item.price}</p>
       </div>
     ))}
     
