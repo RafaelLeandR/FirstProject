@@ -16,8 +16,8 @@ import ReactToPrint from 'react-to-print'
 let copydata
 let tableData1= [
   { id: 1, barcode:'40181700982', name: 'Lanterna' , price: '15,00'},
-  { id: 2, barcode:'40181700982', name: 'Brisadeiro' , price: '15,00'},
-  { id: 3, barcode:'40181700982', name: 'Lanterna' , price: '15,00'},
+  { id: 2, barcode:'40181700982', name: 'Mouse Maxprint' , price: '15,00'},
+  { id: 3, barcode:'40181700982', name: 'Teclado Padrão Maxprint' , price: '15,00'},
   { id: 4, barcode:'40181700982', name: 'Lanterna' , price: '15,00'},
   { id: 5, barcode:'40181700982', name: 'Lanterna' , price: '15,00'},
   { id: 6, barcode:'40181700982', name: 'Lanterna' , price: '15,00'},
